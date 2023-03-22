@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+}
+.flexbox-container { 
+height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+.flex-card {
+  width: 13rem;
+  height:300px;
+  padding: 4rem;
+}
+
+.name {
+  padding: 1.3rem 0;
+  font-size: 2rem;
+  color: white;
+  font-weight:600;
+}
+.card-header {
+  font-family: 'Big Shoulders Display', cursive;
+}
+.card-body {
+  font-family: 'Lexend Deca', sans-serif;
+  height: 60%;
+  font-size:0.9rem;
+  letter-spacing:1.5px;
+  color: #e5e1e1;
+}
+.card-footer {
+  font-family: 'Lexend Deca', sans-serif;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+.btn {
+  border-style: solid;
+  padding: 10px 20px;
+  background-color: inherit;
+  border-color: white;
+  color: white;
+  border-radius: 18px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+@media only screen and (max-width: 700px) {
+  .sedan {
+  border-radius: 10px 10px 0 0;
+}
+.luxury {
+  border-radius: 0 0 10px 10px;
+}
+}
+@media only screen and (max-width: 900px) and (min-width: 699px) {
+  .sedan {
+  border-radius:0;
+}
+.luxury {
+  border-radius: 0;
+}
+}
